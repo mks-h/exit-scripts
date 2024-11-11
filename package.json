@@ -1,0 +1,14 @@
+{
+	"name": "exit-scripts",
+	"version": "1.0.0",
+	"description": "Корисні скрипти для вебсайту exitbattle.com",
+	"scripts": {
+		"lint": "biome lint",
+		"format": "biome format --write"
+	},
+	"author": "Maksym \"Чемний\" Hazevych <mhazevych@proton.me>",
+	"license": "ISC",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4"
+	}
+}
