@@ -27,7 +27,9 @@
 	},
 	"javascript": {
 		"formatter": {
-			"quoteStyle": "double"
+			"quoteStyle": "double",
+			// All JavaScript has to be valid as a one-liner
+			"semicolons": "always"
 		}
 	}
 }
