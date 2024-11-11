@@ -31,7 +31,13 @@ javascript: (() => {
 	const input = prompt("Перейти на учасника №:");
 	if (!input) return;
 	const targetNumber = Number(input);
-	if (!targetNumber) return alert(`Введений текст не підходить: ${input}`);
+	const totalTracksAmount = Number(
+		document
+			.querySelectorAll(".paginator-total")[0]
+			.innerText.match(/[0-9]+/)[0],
+	);
+	if (!targetNumber || targetNumber <= 0 || targetNumber > totalTracksAmount)
+		return alert(`Введений текст не підходить: ${input}`);
 	const targetPage = Math.ceil(targetNumber / 15);
 	switchPage(targetPage);
 
